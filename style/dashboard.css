@@ -1,0 +1,129 @@
+.dashboard__container {
+  width: min(100% - 2rem, 1080px);
+  margin-inline: auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.accout-card {
+  width: min(30%, 300px);
+
+  /* 760 65-70% */
+}
+.accout-detail {
+  background: var(--bg-card);
+  padding: 15px;
+  border-radius: 10px;
+}
+.accout-operation {
+  padding: 15px;
+  background: var(--bg-card);
+  margin-block: 10px;
+  border-radius: 10px;
+}
+.accout-operation a {
+  opacity: 0.7;
+  color: rgb(255, 145, 145);
+  font-size: 14px;
+  transition: all 300ms;
+}
+.accout-operation a:hover {
+  opacity: 1;
+}
+.operation {
+  padding: 10px 15px;
+  width: min(70%, 760px);
+  background: var(--bg-card);
+  border-radius: 10px;
+}
+.post-operation {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.delete-btn {
+  letter-spacing: 0.6px;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #bf7272;
+  box-shadow: 0px 0px 0px 2px #bf7272d5;
+  transition: all 300ms;
+}
+.delete-btn:hover {
+  color: var(--text-primary);
+  background: #bf7272;
+}
+
+.new-btn {
+  letter-spacing: 0.6px;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: var(--text-primary);
+  box-shadow: 0px 0px 0px 2px var(--primary);
+  transition: all 300ms;
+  background: var(--primary);
+}
+.new-btn:hover {
+  color: var(--text-primary);
+  background: #4f8461;
+}
+
+.list_user-content {
+  margin: 20px 0;
+
+  padding: 10px;
+  border-radius: 3px;
+}
+.user-content {
+  background: var(--bg-primary);
+  padding: 10px 15px;
+  border-radius: 3px;
+  margin-block: 10px;
+  transition: all 200ms;
+}
+.user-content:hover {
+  box-shadow: 0px 0px 0px 1.5px #4b5056;
+}
+.user-content div {
+  display: flex;
+  justify-content: space-between;
+}
+.user-content div div {
+  display: inline;
+}
+.user-content h3 {
+  font-size: 20px;
+  cursor: default;
+}
+.user-content div div:first-child span {
+  opacity: 0.8;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.user-content div div:first-child span:hover {
+  opacity: 1;
+}
+.user-content div div:last-child {
+  padding-bottom: 3px;
+}
+@media only screen and (max-width: 700px) {
+  .dashboard__container {
+    flex-direction: column-reverse;
+  }
+  .operation {
+    width: 100%;
+  }
+  .accout-card {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .user-content div {
+    flex-direction: column;
+    height: 80px;
+  }
+}
