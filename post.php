@@ -30,7 +30,7 @@ require_once("./module/post.module.php");
   ?>
   <div class="content__container">
     <?php
-    display_post_content();
+    $post->display_post_content();
     ?>
   </div>
 
